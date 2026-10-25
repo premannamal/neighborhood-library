@@ -142,6 +142,7 @@ public class Book {
 
 
     public static void showCheckedOutBooks(Book[] bk) {
+        //this method is used to show checked out books to the user and check in books as well
         Scanner scanner = new Scanner(System.in);
         String bookTitle;
         for (int j = 0; j < bk.length; j = j + 1) {
@@ -162,6 +163,7 @@ public class Book {
     }
 
     public static void checkIn(String bookTitle, Book[] bk) {
+        //this method is used to check in the book
         for (int j = 0; j < bk.length; j = j + 1) {
             if (bookTitle.equals(bk[j].title)) {
                 bk[j].isCheckedOut = false;
