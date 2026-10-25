@@ -1,5 +1,9 @@
 import java.util.*;
+
 public class Book {
+/* This is an application for neighborhood library. The library is a free service to anyone in my neighborhood
+and is based on the honor system. Anyone can check out a book by entering their name and the application
+    will track who checked it out.*/
 
     int id;
     String isbn;
