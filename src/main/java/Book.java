@@ -15,12 +15,12 @@ public class Book {
         this.checkedOutTo = checkedOutTo;
     }
 
-    //gettor method
+    //gettor method for id
     public int getid() {
         return this.id;
     }
 
-    // Setter method (optional, included for context)
+    // Setter method (optional, included for context) for id
     public void setid(int id) {
         this.id = id;
     }
@@ -67,9 +67,10 @@ public class Book {
 
 
     public static void main(String[] args) {
+        //array size set to 20
         Book[] bk = new Book[20];
         Scanner scanner = new Scanner(System.in);
-
+        // use constructor to initialize the values of array elements
         bk[0] = new Book(1, "978-81-88479-95-5", "Silence of the Heart", false, null);
         bk[1] = new Book(2, "988-81-88479-95-5", "Rabbit's of the Wild", false, null);
         bk[2] = new Book(3, "979-81-88479-95-5", "Dogs on the Prairie", false, null);
